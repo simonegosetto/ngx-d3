@@ -1,6 +1,6 @@
 {
   "name": "ngx-d3-wrapper",
-  "version": "17.0.0",
+  "version": "17.0.1",
   "author": {
     "name": "Simone Gosetto",
     "url": "https://github.com/simonegosetto"
@@ -53,6 +53,11 @@
     "d3-voronoi",
     "d3-zoom"
   ],
+  "scripts": {
+    "up:patch": "npm version patch",
+    "up:minor": "npm version minor",
+    "up:major": "npm version major"
+  },
   "license": "MIT",
   "dependencies": {
     "@types/d3": "^7.4.3",

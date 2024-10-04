@@ -1,25 +1,16 @@
-<p align="center">
-  <img src="docs/assets/logo.png" />
-</p>
-<p align="center">
-  <a href="https://www.npmjs.com/package/@katze/ngx-d3">
-    <img src="https://img.shields.io/npm/dt/@katze/ngx-d3.svg" />
-  </a>  
-  <a href="https://www.npmjs.com/package/@katze/ngx-d3">
-    <img src="https://img.shields.io/npm/l/@katze/ngx-d3.svg" />
-  </a>
-  <a href="https://travis-ci.org/ZeevKatz/ngx-d3">
-    <img src="https://api.travis-ci.org/ZeevKatz/ngx-d3.svg?branch=master" />
-  </a>
-</p>
+__Forked from https://gitlab.com/dmp-repo/js-pkg/ngx-d3__
 
 `ngx-d3` is a [D3](https://github.com/d3/d3) wrapper service for [Angular](https://angular.io/) applications inspired by [@tomwanzek/d3-ng2-service](https://github.com/tomwanzek/d3-ng2-service).
+
+Sadly, tomwanzek is no longer maintaining the project. The last push for his library was in April 2018 and the latest supported version of angular is Angular 5. The torch of keeping the package up to speed in terms of angular compatibility was then passed onto ZeevKats's [@katze/ngx-d3](https://www.npmjs.com/package/@katze/ngx-d3) package, which kept the package updated up to angular 12, and finally to dmp's [@d-m-p/ngx-d3](https://www.npmjs.com/package/@d-m-p/ngx-d3) which kept it updated up to angular 16.
+
+The package appears to be no longer maintained as it has now fallen behind a couple versions and I am taking over the mantle.
 
 ---
 ### Installation
 
 ```
-yarn add @katze/ngx-d3
+yarn add ngx-d3-wrapper
 ```
 ---
 ### Usage
@@ -35,7 +26,7 @@ To obtain the `d3` object from an injected D3 service `ngxD3Service: NgxD3Servic
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { NgxD3Service } from '@katze/ngx-d3';
+import { NgxD3Service } from 'ngx-d3-wrapper';
 
 @Component({
   selector: 'histogram-component',
